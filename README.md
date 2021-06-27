@@ -4,7 +4,7 @@
 
 ## So Pekocko - application d'avis gastronomiques
 
-![Cat](https://github.com/jeremydassonville/jeremydassonville_P6_21052021/blob/main/Instructions/logo_soPekocko.jpeg)
+![Cat](https://github.com/jeremydassonville/test/blob/main/Instructions/logo_soPekocko.jpeg?raw=true)
 
 Le sujet porte sur le développement d'une application d'évaltuation de sauces piquantes pour la marque 'So Pekocko'. 
 L'objectif est de créer un MVP permettant aux utilisateurs d'ajouter leurs sauces préférées et de liker ou disliker les sauces ajoutées par les autres utilisateurs.
