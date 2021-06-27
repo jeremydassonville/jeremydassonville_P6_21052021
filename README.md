@@ -29,49 +29,24 @@ L'objectif est de créer un MVP permettant aux utilisateurs d'ajouter leurs sauc
 
 ***
 
-### Installation
+#### 💡 &nbsp; Faire tourner le Frontend
 
-Les étapes pour installer votre programme....
+## Piquante
 
-Dites ce qu'il faut faire...
+Pour faire fonctionner le projet, vous devez installer :
+- [NodeJS](https://nodejs.org/en/download/) en version 12.14
+- [Angular CLI](https://github.com/angular/angular-cli) en version 7.0.2.
+- [node-sass](https://www.npmjs.com/package/node-sass) : attention à prendre la version correspondante à NodeJS. Pour ce projet il faut utiliser la version 4.12
 
-_exemple_: Executez la commande ``telnet mapscii.me`` pour commencer ensuite [...]
+Sur Windows, ces installations nécessitent d'utiliser PowerShell en tant qu'administrateur.
 
+## Development server
 
-Ensuite vous pouvez montrer ce que vous obtenez au final...
+Démarrer ng serve pour avoir accès au serveur de développement. Rendez-vous sur http://localhost:4200/. L'application va se recharger automatiquement si vous modifiez un fichier source.
 
-## Démarrage
+#### 💡 &nbsp; Faire tourner le Backend
 
-Dites comment faire pour lancer votre projet
+* Ouvrir le terminal sur ce dossier.
+* Pour utiliser le serveur, chargez les packages du projet : `npm install`.
+* Puis lancez le serveur: `nodemon server`.
 
-## Fabriqué avec
-
-Entrez les programmes/logiciels/ressources que vous avez utilisé pour développer votre projet
-
-_exemples :_
-* [Materialize.css](http://materializecss.com) - Framework CSS (front-end)
-* [Atom](https://atom.io/) - Editeur de textes
-
-## Contributing
-
-Si vous souhaitez contribuer, lisez le fichier [CONTRIBUTING.md](https://example.org) pour savoir comment le faire.
-
-## Versions
-Listez les versions ici 
-_exemple :_
-**Dernière version stable :** 5.0
-**Dernière version :** 5.1
-Liste des versions : [Cliquer pour afficher](https://github.com/your/project-name/tags)
-_(pour le lien mettez simplement l'URL de votre projets suivi de ``/tags``)_
-
-## Auteurs
-Listez le(s) auteur(s) du projet ici !
-* **Jhon doe** _alias_ [@outout14](https://github.com/outout14)
-
-Lisez la liste des [contributeurs](https://github.com/your/project/contributors) pour voir qui à aidé au projet !
-
-_(pour le lien mettez simplement l'URL de votre projet suivi de ``/contirubors``)_
-
-## License
-
-Ce projet est sous licence ``exemple: WTFTPL`` - voir le fichier [LICENSE.md](LICENSE.md) pour plus d'informations
