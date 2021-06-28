@@ -1,12 +1,12 @@
-const express = require('express');
+const express = require('express'); // framework basé sur node.js
 const cors = require('cors');
-const bodyParser = require('body-parser');
-const mongoose = require('mongoose');
-const path = require('path');
+const bodyParser = require('body-parser'); // permet d'extraire l'objet JSON des requêtes POST
+const mongoose = require('mongoose'); // permet de se connecter à la base de donée mongoDB
+const path = require('path'); // permet de travailler avec les répertoires et chemin de fichier
 
-const helmet = require('helmet');
-const session = require('cookie-session');
-const rateLimit = require('express-rate-limit');
+const helmet = require('helmet'); // permet de protéger l'application de certaines vulnérabilités connues en configurant de manière appropriée des en-têtes HTTP
+const session = require('cookie-session'); // permet de sécurisé les cookies notamment en modifiant le nom du cookie de session par défaut
+const rateLimit = require('express-rate-limit'); // sécurie les requêtes en limitant le nombre possible de requête à l'API
 
 const sauceRoutes = require('./routes/sauce');
 const userRoutes = require('./routes/user');
@@ -54,7 +54,7 @@ app.use(bodyParser.json());
 
 app.use(helmet());
 
-app.use('/images', express.static(path.join(__dirname, 'images')));
+app.use('/images', express.static(path.join(__dirname, 'images'))); // permet de gérer la ressource image de manière statique. Utilisé pour récupérer les fichiers qui sont dans le repertoires images
 
 app.use('/api/auth', userRoutes);
 app.use('/api/sauces', sauceRoutes);
