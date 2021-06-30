@@ -37,7 +37,7 @@ exports.modifySauces = (req, res, next) => {
         .catch(error => res.status(500).json({ error }));
 };
 
-exports.deleteSauce = (req, res, next) => {
+exports.deleteSauce = (req, res) => {
     Sauce.findOne({ _id: req.params.id }) // on trouver l'objet dans la base de donnée
         .then(sauce => {
             const filename = sauce.imageUrl.split('/images/')[1]; // on récupère le nom du fichier avec split

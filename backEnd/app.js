@@ -1,6 +1,6 @@
 const express = require('express'); // framework basé sur node.js
-const cors = require('cors');
-const bodyParser = require('body-parser'); // permet d'extraire l'objet JSON des requêtes POST
+const cors = require('cors'); // permet d'utiliser les ressoureces par un autre domaine que celui à partir duquel la première ressource à été servie
+const bodyParser = require('body-parser'); // permet d'extraire l'objet JSON des requêtes 
 const mongoose = require('mongoose'); // permet de se connecter à la base de donée mongoDB
 const path = require('path'); // permet de travailler avec les répertoires et chemin de fichier
 
@@ -31,12 +31,12 @@ app.use(limiter);
 
 app.use(cors());
 
-app.use((req, res, next) => {
+/* app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
     next();
-  });
+  }); */
 
 const expiryDate = new Date(Date.now() + 3600000);
 app.use(session( {
